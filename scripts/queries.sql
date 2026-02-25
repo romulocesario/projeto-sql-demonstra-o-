@@ -16,7 +16,7 @@ WHERE id = (SELECT idcliente FROM pedidos WHERE datahorapedido = '2023-01-02 08:
 -- SUBSCONSUTAS COM IN E HAVING
 SELECT idcliente
 FROM pedidos
-WHERE strftime('%m', datahorapedido) = '01' ;
+WHERE strftime('%m', datahorapedido) = '01';
 
 
 SELECT nome
@@ -47,7 +47,7 @@ UNION
 SELECT rua, bairro, cidade, estado, cep FROM fornecedores;
 
 
-SELECT * FROM colaboradores WHERE rua = 'Rua das flores - 210' ;
+SELECT * FROM colaboradores WHERE rua = 'Rua das flores - 210';
 
 
 SELECT rua, bairro, cidade, estado, cep FROM colaboradores
