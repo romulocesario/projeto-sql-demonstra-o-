@@ -7,6 +7,7 @@ CREATE TABLE produtos (
   categoria VARCHAR(50)
 );
 
+
 CREATE TABLE colaboradores (
     ID TEXT PRIMARY KEY ,
     Nome VARCHAR(255) NOT NULL,
