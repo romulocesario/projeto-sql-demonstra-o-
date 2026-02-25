@@ -39,3 +39,23 @@ SELECT nome, preco
 FROM produtos
 GROUP BY nome, preco
 HAVING preco > (SELECT AVG(preco) FROM produtos);
+
+
+-- SC DE UNION E UNION ALL
+SELECT rua, bairro, cidade, estado, cep FROM colaboradores
+UNION 
+SELECT rua, bairro, cidade, estado, cep FROM fornecedores;
+
+
+SELECT * FROM colaboradores WHERE rua = 'Rua das flores - 210' ;
+
+
+SELECT rua, bairro, cidade, estado, cep FROM colaboradores
+UNION ALL
+SELECT rua, bairro, cidade, estado, cep FROM fornecedores;
+
+
+SELECT nome, rua, bairro, cidade, estado, cep FROM colaboradores
+UNION ALL
+SELECT nome, rua, bairro, cidade, estado, cep FROM fornecedores;
+
