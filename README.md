@@ -16,7 +16,7 @@ Itens dos pedidos
 O foco foi trabalhar bem os relacionamentos entre as entidades, garantindo integridade referencial com uso de foreign keys e regras como ON DELETE CASCADE.
 Além da modelagem, explorei diferentes níveis de consulta:
 
-Consultas simples com SELECT, WHERE e ORDER BY
+Consultas simples com SELECT, WHERE e HAVING
 
 Consultas com JOIN
 
